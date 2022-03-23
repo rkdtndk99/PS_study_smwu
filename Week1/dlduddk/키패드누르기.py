@@ -48,8 +48,4 @@ def solution(numbers, hand):
                 else:
                     left = temp[:]
                     answer += 'L'
-        #print("left : ",left)
-        #print("right : ",right)
-        #print()
-            
     return answer
