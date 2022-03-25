@@ -1,7 +1,7 @@
 class Solution {
     public String solution(String new_id) {
         String answer = "";
-                //step1
+        //step1
         answer = new_id.toLowerCase();
         //step2
         String temp2 = "";
@@ -51,5 +51,36 @@ class Solution {
     }
 }
 
-//step4 실행시 문자열 크기 0보다 커아햠.
-//charAt 사용시 인덱스 범위 주의하기 (StringIndexOutOfBoundsException)
+/* 해결 전략
+단계별로 해결
+step4 실행시 문자열 크기 0보다 커아햠.
+charAt 사용시 인덱스 범위 주의하기 (StringIndexOutOfBoundsException)
+*/
+
+//다른사람의 풀이
+class Solution {
+    public String solution(String new_id) {
+        String answer = "";
+        String temp = new_id.toLowerCase();
+
+        temp = temp.replaceAll("[^-_.a-z0-9]","");
+        System.out.println(temp);
+        temp = temp.replaceAll("[.]{2,}",".");
+        temp = temp.replaceAll("^[.]|[.]$","");
+        System.out.println(temp.length());
+        if(temp.equals(""))
+            temp+="a";
+        if(temp.length() >=16){
+            temp = temp.substring(0,15);
+            temp=temp.replaceAll("^[.]|[.]$","");
+        }
+        if(temp.length()<=2)
+            while(temp.length()<3)
+                temp+=temp.charAt(temp.length()-1);
+
+        answer=temp;
+        return answer;
+    }
+}
+
+
