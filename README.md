@@ -46,7 +46,7 @@ Problem Solving 스터디 레포지토리
 | week | chaewoniii | dlduddk | alotofhee | rkdtndk99 |  
 |---|---|---|---|---|  
 | Week 1 | 크레인 인형뽑기 게임 | 신고결과받기 | 키패드 누르기 | 숫자 문자열과 영단어 |  
-| Week 2 |  |  |  |  |
+| Week 2 | 로또의 최고 순위와 최저 순위 | [1차]다트 게임 | [1차]비밀지도 | 실패율 |
 | Week 3 |  |  |  |  | 
 | Week 4 |  |  |  |  | 
 | Week 5 |  |  |  |  | 
