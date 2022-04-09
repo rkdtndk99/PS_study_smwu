@@ -22,5 +22,7 @@ def solution(citations):
         # 최소 h번 인용된 논문 수가 h개 이상
         if len(large) >= h:
             answer = h
-        
+        # else는 없어도 통과되는데 있으면 시간 훨씬 줄어듦
+        else:
+            break
     return answer
